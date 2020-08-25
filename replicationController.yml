@@ -10,6 +10,7 @@ spec:
     metadata:
       name: somename
       labels:
+        app: myapp
         tier: frontend
     spec:
       containers:
