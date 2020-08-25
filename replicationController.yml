@@ -13,7 +13,6 @@ spec:
         app: sise
     spec:
       containers:
-      - name: sise
-        image: quay.io/openshiftlabs/simpleservice:0.5.0
-        ports:
-        - containerPort: 9876
+       - name: hello
+         image: busybox
+         command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
