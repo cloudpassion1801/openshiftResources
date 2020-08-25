@@ -5,7 +5,7 @@ metadata:
   name: testpod1
   labels:
     tier: frontend
-    app: busybox1
+    app: myapp
 spec:
   containers:
   - name: hello
@@ -19,7 +19,7 @@ metadata:
   name: testpod2
   labels:
     tier: frontend
-    app: busybox2
+    app: myapp1
 spec:
   containers:
   - name: hello
