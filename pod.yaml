@@ -5,7 +5,7 @@ metadata:
   name: testpod1
   labels:
     tier: frontend
-    app: myapp
+    app: myapp2
 spec:
   containers:
   - name: hello
