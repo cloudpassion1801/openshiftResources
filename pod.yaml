@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: testpod
   label:
-    app: testpod
+    tier: frontend
 spec:
   containers:
   - name: hello
