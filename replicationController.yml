@@ -5,13 +5,14 @@ metadata:
 spec:
   replicas: 3
   selector:
-    tier: frontend
+    app: myapp
+   
   template:
     metadata:
       name: somename
       labels:
         app: myapp
-        tier: frontend
+        
     spec:
       containers:
        - name: hello
