@@ -1,0 +1,11 @@
+apiVersion:
+kind: Pod
+metadata:
+  name: testpod
+  label:
+    app: testpod
+spec:
+  containers:
+  - name: hello
+    image: busybox
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
