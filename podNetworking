@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod1
+  labels:
+    tier: frontend
+    app: myapp2
+spec:
+  containers:
+  - name: hello
+    image: busybox
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+  - name: nginx
+    image: nginx
