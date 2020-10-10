@@ -10,7 +10,7 @@ spec:
   containers:
   - name: hello
     image: busybox!
-    command: ['sh', '-c', 'echo "Hello, Kubernetes!"  && wget http://localhost:80 && echo "Dwonloaded!!!!!"&& sleep 3600']
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!"  && wget http://localhost:80 && echo "Dwonloaded!!!!!"&& ll && sleep 3600']
   - name: nginx
     image: nginx:1.14.2
     ports:
