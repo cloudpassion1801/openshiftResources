@@ -21,7 +21,7 @@ spec:
         securityContext:
           privileged: true 
         volumeMounts:
-        - mountPath: /data 
+        - mountPath: /var/jenkins_home
           name: hostpath-privileged
       volumes:
       - name: hostpath-privileged
